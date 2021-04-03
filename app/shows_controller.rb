@@ -22,7 +22,8 @@ end
 def most_popular_show
 end
 
-def lowest_rating
+def lowest_rating(rating)
+    Show.minimum(rating)
 end
 
 def least_popular_show
